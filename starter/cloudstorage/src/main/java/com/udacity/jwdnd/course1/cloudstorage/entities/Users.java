@@ -1,11 +1,11 @@
 package com.udacity.jwdnd.course1.cloudstorage.entities;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 public class Users {
     private Integer userId;
