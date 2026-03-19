@@ -48,7 +48,6 @@ public class LoginController {
 
         usersMapper.insert(new Users(null, user.getUsername(), encodedSalt, hashedPassword, user.getFirstName(), user.getLastName()));
 
-        model.addAttribute("signupSuccess", true);
-        return "signup";
+        return "redirect:/login?signupSuccess";
     }
 }
